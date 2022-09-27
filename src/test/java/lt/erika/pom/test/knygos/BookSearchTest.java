@@ -18,16 +18,9 @@ public class BookSearchTest extends TestBase {
         String expectedText = "NEKUTENK MEŠKOS!";
         String actualText;
 
-        //testas:
-        // paspausti ant ieškojimo mygtuko;
-        // paspausti isplestine paieska;
-        //pasirinkti autoriu is saraso;
-        //paspausti mygtuka ieskoti;
-        //paspausti ant kmygos
-
 
         BookSearchPages.clickSearchBoxButton();
-        BookSearchPages.clickOnExtendedSearchButton();// šitoje vietoje sustoja testas.
+        BookSearchPages.clickOnExtendedSearchButton();
         BookSearchPages.selectAuthorFromDropdownList("Sam Taplin");
         BookSearchPages.clickSearchButton();
         BookSearchPages.sleep(1000);

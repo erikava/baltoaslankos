@@ -19,8 +19,6 @@ public class LoginTest extends TestBase {
         String expectedText = "MANO PASKYRA";
         String actualText;
 
-        //testas prisijungti su validziais duomenimis
-
 
         LoginPages.enterEmail("vaerika1@gmail.com");
         LoginPages.enterPassword("baltoslankos");
@@ -39,8 +37,6 @@ public class LoginTest extends TestBase {
         String actualText;
 
 
-        //Testas su nevalidziais duomenimis
-
         LoginPages.enterEmail("paskyra@gmail.com");
         LoginPages.enterPassword("paskyra");
         LoginPages.clickButtonSubmit();
@@ -55,8 +51,6 @@ public class LoginTest extends TestBase {
     public void testResetPasswordFunctionality(){
         String actualText;
         String expectedText = "IŠSIUNTĖME JUMS EL. LAIŠKĄ SU PRISIJUNGIMO INSTRUKCIJA";
-
-        //testas  gauti slaptazodzio priminima
 
         LoginPages.clickbuttonforgotpassword();
         LoginPages.enterEmailAdress("vaerika1@gmail.com");

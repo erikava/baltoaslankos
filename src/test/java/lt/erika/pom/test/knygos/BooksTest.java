@@ -20,11 +20,9 @@ public class BooksTest extends TestBase {
         String expectedText = "ĮDĖTA Į KREPŠELĮ";
         String actualText;
 
-        //Testas:Prideti knyga i krepseli
-        //pasirinkti knyga;
-        //prideti  kelis vienetus(todel bandau naudot double Click)
 
-        BooksPages.clickOnBook();//nepasirenka knygos ,manau,blogas xpath ?
+
+        BooksPages.clickOnBook();
         BooksPages.doubleClickToAddMore();
         BooksPages.clickAddToCart();
 
