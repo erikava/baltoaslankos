@@ -8,7 +8,7 @@ https://www.baltoslankos.lt/
  * click on "Išplėstinė paieška";
  * Choose author from drop down list ("Sam Taplin");
  * click button 'Ieškoti';
- * Check if text appears in results.("NEKUTENK MEŠKOS!");
+ * Check if text appears in results "NEKUTENK MEŠKOS!";
 
 2.Try add books to char:
 * Click on book;
