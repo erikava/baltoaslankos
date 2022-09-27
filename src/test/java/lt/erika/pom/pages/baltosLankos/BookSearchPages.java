@@ -1,5 +1,8 @@
 package lt.erika.pom.pages.baltosLankos;
 
+import lt.erika.pom.pages.Common;
+import lt.erika.pom.pages.Locators;
+
 public class BookSearchPages {
     public static void open() {
         Common.openUrl("https://www.baltoslankos.lt/");
@@ -22,7 +25,11 @@ public class BookSearchPages {
     }
 
     public static void clickOnExtendedSearchButton() {
-        Common.clickElement(
+//        Common.clickElement(
+//                Locators.BookSearch.extendedSearchButton
+//        );
+
+        Common.clickElementByAction(
                 Locators.BookSearch.extendedSearchButton
         );
 

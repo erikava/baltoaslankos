@@ -1,5 +1,8 @@
 package lt.erika.pom.pages.baltosLankos;
 
+import lt.erika.pom.pages.Common;
+import lt.erika.pom.pages.Locators;
+
 public class BooksPages {
 
     public static void open() {

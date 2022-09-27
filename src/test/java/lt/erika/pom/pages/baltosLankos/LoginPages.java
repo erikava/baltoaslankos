@@ -1,7 +1,7 @@
 package lt.erika.pom.pages.baltosLankos;
 
-import lt.erika.pom.pages.baltosLankos.Common;
-import lt.erika.pom.pages.baltosLankos.Locators;
+import lt.erika.pom.pages.Common;
+import lt.erika.pom.pages.Locators;
 
 public class LoginPages {
 

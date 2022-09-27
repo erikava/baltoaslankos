@@ -1,4 +1,4 @@
-package lt.erika.pom.pages.baltosLankos;
+package lt.erika.pom.pages;
 
 import lt.erika.pom.utils.Driver;
 import org.openqa.selenium.By;
@@ -36,6 +36,18 @@ public class Common {
         getElement(locator).click();
     }
 
+    public static void clickElementByAction(By locator) {
+        WebElement element = getElement(locator);
+
+        Actions actions = new Actions(Driver.getDriver());
+        actions.moveToElement(element);
+        actions.click();
+        actions.perform();
+    }
+
+
+
+
     public static String getElementText(By locator) {
         return getElement(locator).getText();
     }
@@ -54,13 +66,21 @@ public class Common {
         );
     }
 
+    public static void waitForElementToBeClickable(By locator) {
+        WebDriverWait webDriverWait = new WebDriverWait(
+                Driver.getDriver(),
+                Duration.ofSeconds(10)
+        );
+        webDriverWait.until(
+                ExpectedConditions.elementToBeClickable(locator)
+        );
+    }
 
     public static void selectOptionsByValue(By locator, String value) {
         WebElement webElement = getElement(locator);
         Select selectElement = new Select(webElement);
         selectElement.selectByValue(value);
     }
-
 
     public static void doubleClick(By locator) {
         WebElement element = getElement(locator);

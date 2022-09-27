@@ -1,4 +1,4 @@
-package lt.erika.pom.pages.baltosLankos;
+package lt.erika.pom.pages;
 
 
 import org.openqa.selenium.By;

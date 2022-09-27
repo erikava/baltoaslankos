@@ -1,6 +1,7 @@
 package lt.erika.pom.test.knygos;
 
 import lt.erika.pom.pages.baltosLankos.LoginPages;
+import lt.erika.pom.test.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
@@ -18,7 +19,6 @@ public class LoginTest extends TestBase {
 
         String expectedText = "MANO PASKYRA";
         String actualText;
-
 
         LoginPages.enterEmail("vaerika1@gmail.com");
         LoginPages.enterPassword("baltoslankos");

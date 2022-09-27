@@ -1,10 +1,10 @@
 package lt.erika.pom.test.knygos;
 
 import lt.erika.pom.pages.baltosLankos.BookSearchPages;
+import lt.erika.pom.test.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
 
 public class BookSearchTest extends TestBase {
 
@@ -13,11 +13,11 @@ public class BookSearchTest extends TestBase {
         BookSearchPages.open();
         BookSearchPages.closeAd();
     }
+
     @Test
     public void testSearch(){
         String expectedText = "NEKUTENK MEŠKOS!";
         String actualText;
-
 
         BookSearchPages.clickSearchBoxButton();
         BookSearchPages.clickOnExtendedSearchButton();
@@ -29,16 +29,6 @@ public class BookSearchTest extends TestBase {
         actualText = BookSearchPages.readBookTitle();
 
         Assert.assertEquals(actualText,expectedText);
-
-
-
-
-
-
-
-
-
-
 
     }
 }
