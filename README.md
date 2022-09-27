@@ -6,7 +6,7 @@ https://www.baltoslankos.lt/
 1.Test search book : 
  * click on Search button;
  * click on "Išplėstinė paieška";
- * Choose author from drop down list ("Sam Taplin";
+ * Choose author from drop down list ("Sam Taplin");
  * click button 'Ieškoti';
  * Check if text appears in results.("NEKUTENK MEŠKOS!");
 
@@ -26,8 +26,8 @@ https://www.baltoslankos.lt/
 * Enter email;
 * Enter password;
 * Click "Patvirtinti";
-* Check if message appears "Prisijungti nepavyko. Įveskite duomenis iš naujo ir bandykite dar kartą" +
-  "Dar neužregistravote paskyros";
+* Check if message appears "Prisijungti nepavyko. Įveskite duomenis iš naujo ir bandykite dar kartą 
+  Dar neužregistravote paskyros";
 
 5.Test to get forgotten password:
 * Click "Pamiršau slaptažodį";
