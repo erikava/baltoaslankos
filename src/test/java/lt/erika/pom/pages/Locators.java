@@ -28,18 +28,21 @@ public class Locators {
 
         public static By selectAuthor = By.xpath("//*[@id='mid']");
         public static By advancedButton = By.xpath("//*[@class='button-1 search-button']");
-        public static By ButtonBook = By.xpath("/html/body/div[9]/div[3]/div[4]/div/div[1]/div/div[2]/div[3]/div/div[2]/div/div/div[4]/div/div[2]/div[4]/a/span");
-        public static By bookTitle = By.xpath("//*[@class='product-name']");
+        public static By ButtonBook = By.xpath("//*[@class='product-item hover-variant-one sevenspikes-ajaxcart']");
+        public static By bookTitle = By.xpath("//*[@class='productAddedToCartWindowTitle']");
     }
 
     public static class Books {
 
 
-        public static By clickBook = By.xpath("/html/body/div[9]/div[3]/div[4]/div/div[2]/div/div[2]/div[2]/div[2]/div[1]/div[1]/div[1]/div/div[3]/div[4]/a/span");
+        public static By clickBook = By.xpath("(//a[contains(@href, '/gime-buti-laisvi')])[3]");
 
         public static By clickAddButton = By.xpath("//*[@id='add-to-cart-button-1970']");
         public static By buttonAddMore = By.xpath("//*[@class='plus']");
         public static By productAddedToCartTittle = By.xpath("//*[@class='productAddedToCartWindowTitle']");
+        public static By buttonSearch = By.xpath("//*[@id='small-searchterms']");
+        public static By bookTittle = By.xpath("//*[@id='small-searchterms']");
+        public static By clickSearchButton = By.xpath("//*[@class='button-1 search-box-button']");
     }
 }
 

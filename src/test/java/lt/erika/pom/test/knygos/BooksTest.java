@@ -16,13 +16,15 @@ public class BooksTest extends TestBase {
     }
 
     @Test
-    public static void testToAddBookToCart() {
+    public static void testToAddBookToCartMultipletimes() {
         String expectedText = "ĮDĖTA Į KREPŠELĮ";
         String actualText;
 
-        BooksPages.clickOnBook();
-        BooksPages.doubleClickToAddMore();
-        BooksPages.clickAddToCart();
+        BooksPages.enterBookTittle("ugly love");
+        BooksPages.clickSearchButton();
+        BooksPages.clickOn();
+
+
 
         actualText = BooksPages.readMessage();
         Assert.assertEquals(actualText,expectedText);

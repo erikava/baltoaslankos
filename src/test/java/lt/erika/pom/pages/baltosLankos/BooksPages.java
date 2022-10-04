@@ -10,7 +10,7 @@ public class BooksPages {
     }
 
     public static void clickOnBook() {
-        Common.clickElement(
+        Common.clickElementByAction(
                 Locators.Books.clickBook
         );
 
@@ -44,7 +44,29 @@ public class BooksPages {
                 Locators.Login.buttonCloseAd
         );
     }
+
+    public static void sleep(int millis) {
+        try {
+            Thread.sleep(millis);
+        } catch (InterruptedException e ){
+            Thread.currentThread().interrupt();
+        }
+    }
+
+    public static void enterBookTittle(String bookName) {
+        Common.sendKeysToElement(
+                Locators.Books.bookTittle,bookName
+        );
+    }
+
+    public static void clickSearchButton() {
+        Common.clickElement(
+                Locators.Books.clickSearchButton
+        );
+    }
 }
+
+
 
 
 

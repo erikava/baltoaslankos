@@ -15,13 +15,13 @@ public class BookSearchTest extends TestBase {
     }
 
     @Test
-    public void testSearch(){
-        String expectedText = "NEKUTENK MEŠKOS!";
+    public void testSearchBookAndAddToCart(){
+        String expectedText = "Įdėta į krepšelį";
         String actualText;
 
         BookSearchPages.clickSearchBoxButton();
         BookSearchPages.clickOnExtendedSearchButton();
-        BookSearchPages.selectAuthorFromDropdownList("Sam Taplin");
+        BookSearchPages.selectAuthorFromDropdownList("694");
         BookSearchPages.clickSearchButton();
         BookSearchPages.sleep(1000);
         BookSearchPages.clickOnBook();

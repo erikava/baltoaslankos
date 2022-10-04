@@ -3,12 +3,13 @@
 https://www.baltoslankos.lt/
 
 ### Tests:
-1.Test search book : 
- * click on Search button;
- * click on "Išplėstinė paieška";
+1.Test search book by Author and add to cart : 
+ * Click on Search button;
+ * Click on "Išplėstinė paieška";
  * Choose author from drop down list ("Sam Taplin");
- * click button 'Ieškoti';
- * Check if text appears in results "NEKUTENK MEŠKOS!";
+ * Click button 'Ieškoti';
+ * Click on book
+ * Check if text appears in results "Įdėta į krepšelį";
 
 2.Try add books to char:
 * Click on book;
