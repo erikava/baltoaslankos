@@ -7,6 +7,8 @@ import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
+import java.awt.print.Book;
+
 public class BooksTest extends TestBase {
 
     @BeforeMethod
@@ -16,18 +18,19 @@ public class BooksTest extends TestBase {
     }
 
     @Test
-    public static void testToAddBookToCartMultipletimes() {
-        String expectedText = "ĮDĖTA Į KREPŠELĮ";
+    public static void testToAddBookToCartMultipleTimes() {
+        String expectedText = "Kiekis : 3";
         String actualText;
 
         BooksPages.enterBookTittle("ugly love");
         BooksPages.clickSearchButton();
-        BooksPages.clickOn();
+        BooksPages.clickOnBookUglyLove();
+        BooksPages.addMultipleTimes();
+        BooksPages.clickOnOrderButton();
 
-
-
-        actualText = BooksPages.readMessage();
+        actualText = BooksPages.readText();
         Assert.assertEquals(actualText,expectedText);
+
     }
 
 }

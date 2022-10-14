@@ -6,16 +6,17 @@ https://www.baltoslankos.lt/
 1.Test search book by Author and add to cart : 
  * Click on Search button;
  * Click on "Išplėstinė paieška";
- * Choose author from drop down list ("Sam Taplin");
+ * Choose author from drop down list ;
  * Click button 'Ieškoti';
  * Click on book
  * Check if text appears in results "Įdėta į krepšelį";
 
-2.Try add books to char:
-* Click on book;
-* Click add multiple units (double click;
+2.Add books mutiple times to cart:
+* Enter book tittle ;
+* Click search button;
+* Click add multiple units (double click);
 * Click add to cart;
-* Check if message appears "ĮDĖTA Į KREPŠELĮ";
+* Check if message appears "Kiekis : 3";
 
 3.Login funcionality test using valid information: 
 * Enter email;

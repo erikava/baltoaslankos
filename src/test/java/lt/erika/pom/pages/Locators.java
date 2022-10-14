@@ -23,9 +23,7 @@ public class Locators {
     public static class BookSearch {
 
         public static By searchBoxButton = By.xpath("//*[@class='button-1 search-box-button']");
-
         public static By extendedSearchButton = By.xpath("//*[@id='advs']");
-
         public static By selectAuthor = By.xpath("//*[@id='mid']");
         public static By advancedButton = By.xpath("//*[@class='button-1 search-button']");
         public static By ButtonBook = By.xpath("//*[@class='product-item hover-variant-one sevenspikes-ajaxcart']");
@@ -34,15 +32,20 @@ public class Locators {
 
     public static class Books {
 
-
         public static By clickBook = By.xpath("(//a[contains(@href, '/gime-buti-laisvi')])[3]");
 
         public static By clickAddButton = By.xpath("//*[@id='add-to-cart-button-1970']");
         public static By buttonAddMore = By.xpath("//*[@class='plus']");
         public static By productAddedToCartTittle = By.xpath("//*[@class='productAddedToCartWindowTitle']");
+
         public static By buttonSearch = By.xpath("//*[@id='small-searchterms']");
         public static By bookTittle = By.xpath("//*[@id='small-searchterms']");
         public static By clickSearchButton = By.xpath("//*[@class='button-1 search-box-button']");
+        public static By bookUglyLove = By.xpath("//a[contains(text(),'Greitoji peržiūra')])[1]");
+        public static By clickUnits = By.xpath("//span[@class='plus'])[1]");
+
+        public static By orderButton = By.xpath("//span[contains(text(),'Išankstinis užsakymas')])[1]");
+        public static By units = By.xpath("//span[@class='quantity'])");
     }
 }
 

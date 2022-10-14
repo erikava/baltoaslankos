@@ -16,14 +16,11 @@ public class BookSearchPages {
                 Locators.Login.buttonCloseAd
         );
     }
-
-
     public static void clickSearchBoxButton() {
         Common.clickElement(
                 Locators.BookSearch.searchBoxButton
         );
     }
-
     public static void clickOnExtendedSearchButton() {
 //        Common.clickElement(
 //                Locators.BookSearch.extendedSearchButton
@@ -32,8 +29,6 @@ public class BookSearchPages {
         Common.clickElementByAction(
                 Locators.BookSearch.extendedSearchButton
         );
-
-
     }
 
     public static void selectAuthorFromDropdownList(String value) {
