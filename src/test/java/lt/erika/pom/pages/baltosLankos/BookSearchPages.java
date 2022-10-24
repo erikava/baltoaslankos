@@ -22,9 +22,6 @@ public class BookSearchPages {
         );
     }
     public static void clickOnExtendedSearchButton() {
-//        Common.clickElement(
-//                Locators.BookSearch.extendedSearchButton
-//        );
 
         Common.clickElementByAction(
                 Locators.BookSearch.extendedSearchButton
@@ -54,7 +51,7 @@ public class BookSearchPages {
 
     public static void clickOnBook() {
         Common.clickElement(
-                Locators.BookSearch.ButtonBook
+                Locators.BookSearch.buttonBook
 
         );
 

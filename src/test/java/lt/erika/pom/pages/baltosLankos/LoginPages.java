@@ -15,22 +15,15 @@ public class LoginPages {
                 EmailText
         );
     }
-
     public static void clickButtonSubmit() {
         Common.clickElement(Locators.Login.buttonSubmit);
-
     }
-
     public static void enterPassword(String passwordText) {
         Common.sendKeysToElement(Locators.Login.inputPassword, passwordText);
-
     }
-
     public static String readMessageName() {
         return Common.getElementText(Locators.Login.userName);
-
     }
-
     public static void sleep(int millis) {
         try {
             Thread.sleep(millis);
@@ -38,7 +31,6 @@ public class LoginPages {
             Thread.currentThread().interrupt();
         }
     }
-
     public static void closeAd() {
         Common.waitForElementToBeVisible(
                 Locators.Login.formAd
@@ -47,24 +39,20 @@ public class LoginPages {
                 Locators.Login.buttonCloseAd
         );
     }
-
     public static String readMessage() {
         return Common.getElementText(Locators.Login.errormessage);
     }
 
-    public static void clickbuttonforgotpassword() {
+    public static void clickButtonForgotPassword() {
         Common.clickElement(Locators.Login.buttonForgotPassword);
-
     }
-
     public static void clickButtonResetPassword() {
         Common.clickElement(Locators.Login.buttonResetPassword);
-
     }
-
-    public static void enterEmailAdress(String EmailText) {
+    public static void enterEmailAddress(String EmailText) {
         Common.sendKeysToElement(Locators.Login.inputEmail,
                 EmailText);
     }
+    public static String readReport() {return Common.getElementText(Locators.Login.reportMessage);
+    }
 }
-

@@ -9,33 +9,6 @@ public class BooksPages {
         Common.openUrl("https://www.baltoslankos.lt/knygos");
     }
 
-    public static void clickOnBook() {
-        Common.clickElementByAction(
-                Locators.Books.clickBook
-        );
-
-    }
-
-    public static void clickAddToCart() {
-        Common.clickElement(
-                Locators.Books.clickAddButton
-        );
-
-    }
-
-    public static void doubleClickToAddMore() {
-        Common.doubleClick(
-                Locators.Books.buttonAddMore
-        );
-
-    }
-
-    public static String readMessage() {
-        return Common.getElementText(
-                Locators.Books.productAddedToCartTittle
-        );
-    }
-
     public static void closeAd() {
         Common.waitForElementToBeVisible(
                 Locators.Login.formAd
@@ -44,7 +17,6 @@ public class BooksPages {
                 Locators.Login.buttonCloseAd
         );
     }
-
     public static void sleep(int millis) {
         try {
             Thread.sleep(millis);
@@ -52,44 +24,34 @@ public class BooksPages {
             Thread.currentThread().interrupt();
         }
     }
-
     public static void enterBookTittle(String bookName) {
         Common.sendKeysToElement(
                 Locators.Books.bookTittle, bookName
         );
     }
-
     public static void clickSearchButton() {
         Common.clickElement(
                 Locators.Books.clickSearchButton
         );
     }
-
     public static void clickOnBookUglyLove() {
         Common.clickElement(
                 Locators.Books.bookUglyLove
         );
-
     }
-
     public static void addMultipleTimes() {
         Common.doubleClick(
                 Locators.Books.clickUnits
         );
     }
-
     public static void clickOnOrderButton() {
         Common.clickElement(
                 Locators.Books.orderButton
         );
-
-
     }
-
     public static String readText() {
         return Common.getElementText(
                 Locators.Books.units
-
         );
     }
 }

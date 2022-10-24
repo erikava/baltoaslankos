@@ -1,13 +1,9 @@
 package lt.erika.pom.test.knygos;
-
-
 import lt.erika.pom.pages.baltosLankos.BooksPages;
 import lt.erika.pom.test.TestBase;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
-
-import java.awt.print.Book;
 
 public class BooksTest extends TestBase {
 
@@ -16,7 +12,6 @@ public class BooksTest extends TestBase {
         BooksPages.open();
         BooksPages.closeAd();
     }
-
     @Test
     public static void testToAddBookToCartMultipleTimes() {
         String expectedText = "Kiekis : 3";
@@ -27,11 +22,10 @@ public class BooksTest extends TestBase {
         BooksPages.clickOnBookUglyLove();
         BooksPages.addMultipleTimes();
         BooksPages.clickOnOrderButton();
+        BooksPages.sleep(1000);
 
-        actualText = BooksPages.readText();
+        actualText = BooksPages.readText();//neperskaito zinutes,nes ne visada pilnai uzkrauna puslapi
         Assert.assertEquals(actualText,expectedText);
-
     }
-
 }
 

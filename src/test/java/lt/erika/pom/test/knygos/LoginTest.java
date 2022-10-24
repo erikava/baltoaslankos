@@ -7,13 +7,11 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class LoginTest extends TestBase {
-
     @BeforeMethod
     public void setUp(){
         LoginPages.open();
         LoginPages.closeAd();
     }
-
     @Test
     public void testToLoginValidInfo(){
 
@@ -26,16 +24,12 @@ public class LoginTest extends TestBase {
         LoginPages.sleep(1000);
 
         actualText = LoginPages.readMessageName();
-
         Assert.assertEquals(actualText,expectedText);
     }
-
     @Test
     public void testToLoginInvalidInfo(){
-        String expectedText = "Prisijungti nepavyko. Įveskite duomenis iš naujo ir bandykite dar kartą" +
-                "Dar neužregistravote paskyros";
+        String expectedText ="Prisijungti nepavyko. Įveskite duomenis iš naujo ir bandykite dar kartą \n Dar neužregistravote paskyros";
         String actualText;
-
 
         LoginPages.enterEmail("paskyra@gmail.com");
         LoginPages.enterPassword("paskyra");
@@ -43,21 +37,18 @@ public class LoginTest extends TestBase {
         LoginPages.sleep(1000);
 
         actualText= LoginPages.readMessage();
-
-        Assert.assertEquals(actualText,expectedText);
+        Assert.assertEquals(actualText,expectedText);//kadangi tekstas is naujos eilutes,tai jo teisingai nenuskito
     }
-
     @Test
     public void testResetPasswordFunctionality(){
         String actualText;
         String expectedText = "IŠSIUNTĖME JUMS EL. LAIŠKĄ SU PRISIJUNGIMO INSTRUKCIJA";
 
-        LoginPages.clickbuttonforgotpassword();
-        LoginPages.enterEmailAdress("vaerika1@gmail.com");
+        LoginPages.clickButtonForgotPassword();
+        LoginPages.enterEmailAddress("vaerika1@gmail.com");
         LoginPages.clickButtonResetPassword();
 
-        actualText= LoginPages.readMessage();
-
+        actualText = LoginPages.readReport();
         Assert.assertEquals(actualText,expectedText);
     }
 }
