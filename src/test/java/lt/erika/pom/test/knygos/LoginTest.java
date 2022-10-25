@@ -28,7 +28,7 @@ public class LoginTest extends TestBase {
     }
     @Test
     public void testToLoginInvalidInfo(){
-        String expectedText ="Prisijungti nepavyko. Įveskite duomenis iš naujo ir bandykite dar kartą \n Dar neužregistravote paskyros";
+        String expectedText ="Prisijungti nepavyko.";
         String actualText;
 
         LoginPages.enterEmail("paskyra@gmail.com");
@@ -37,7 +37,8 @@ public class LoginTest extends TestBase {
         LoginPages.sleep(1000);
 
         actualText= LoginPages.readMessage();
-        Assert.assertEquals(actualText,expectedText);
+        Assert.assertTrue(actualText.contains(expectedText));
+
     }
     @Test
     public void testResetPasswordFunctionality(){
