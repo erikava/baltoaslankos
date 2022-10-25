@@ -37,7 +37,7 @@ public class LoginTest extends TestBase {
         LoginPages.sleep(1000);
 
         actualText= LoginPages.readMessage();
-        Assert.assertEquals(actualText,expectedText);//kadangi tekstas is naujos eilutes,tai jo teisingai nenuskito
+        Assert.assertEquals(actualText,expectedText);
     }
     @Test
     public void testResetPasswordFunctionality(){

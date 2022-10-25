@@ -24,7 +24,7 @@ public class BooksTest extends TestBase {
         BooksPages.clickOnOrderButton();
         BooksPages.sleep(1000);
 
-        actualText = BooksPages.readText();//neperskaito zinutes,nes ne visada pilnai uzkrauna puslapi
+        actualText = BooksPages.readText();
         Assert.assertEquals(actualText,expectedText);
     }
 }
